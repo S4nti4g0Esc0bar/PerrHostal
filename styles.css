@@ -1,0 +1,804 @@
+/* styles.css */
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #F5D235;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ccc;
+    z-index: 1000;
+}
+
+.logo h1 {
+    margin: 0;
+    color: #2c3e50;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+nav ul li a.btn-register {
+    background-color: #8e44ad;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    align-items:    center  ;
+}
+
+nav ul li a.btn-register:hover {
+    background-color: #732d91;
+}
+
+.hero {
+    display: flex;
+    align-items: center; /* Alinear en el centro verticalmente */
+    justify-content: center; /* Alinear en el centro horizontalmente */
+    padding: 140px 2rem; /* 9rem a píxeles */
+    background: url('https://chelseazonamascotas.com/wp-content/uploads/Guarderia-Canina-Chelsea-Mascotas.jpg')  no-repeat center center/cover;
+    color: white;
+    position: relative;
+    text-align: left; /* Alinear el texto a la izquierda */
+    border-radius: 50px; /* Redondear las esquinas */
+    margin-top: 105px;
+}
+
+.hero-content {
+    background: rgba(7, 0, 50, 0.6);
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: left; /* Alinear el texto a la izquierda */
+    margin-right: auto; /* Empujar el contenido hacia la izquierda */
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto; /* Empujar los es hacia la derecha */
+}
+
+.hero-buttons .btn {
+    background-color: #2ecc71;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    align-items:    center  ;
+}
+
+.hero-buttons .btn:hover {
+    background-color: #27ae60;
+}
+
+.btn {
+    display: block;
+    width: fit-content;
+    margin: 10px auto; /* Auto para márgenes izquierdo y derecho */
+    padding: 10px 20px;
+    background-color: #47cfac;
+    color: white;
+    text-decoration: none;
+    border-radius: 400px;
+    font-size: 16px;
+}
+
+
+
+.rating {
+    margin-top: 6rem;
+    font-size: 6rem;
+}
+
+.stars {
+    color: #f1c40f;
+}
+
+.trustpilot {
+    font-weight: bold;
+}
+
+.hero-image {
+    display: none;
+    size:   100px;
+}
+
+footer {
+    background-color: #000;
+    height: 90px;
+}
+
+.footer-text{
+    text-align: center;
+    color: #C7E7E4;
+    padding: 20px;
+    margin: 0px;
+
+}
+
+.Titulo {
+  text-align: center; /* Centra el texto */
+  font-weight: bold; /* Aplica negritas */
+  font-family: cursive;
+  color: #3A90F2;
+}
+
+
+
+.home-information {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.home-main .home-about{
+    display: grid;
+    grid-column: 1;
+    justify-items: center;
+    height: auto;
+    border-radius: 50px; /* Redondear las esquinas */
+}
+
+/* Estilos para cada artículo */
+.home-about, .home-me {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.hero {
+  margin-bottom: 50px; /* Separación entre la primera sección y la siguiente */
+}
+
+.home-information {
+  margin-bottom: 50px; /* Separación entre las secciones de información */
+}
+
+
+
+
+.blogs-food-container,.blogs-food-two-container{
+    background-color:#fff ;
+    padding: 20px 50px 40px; /*espacio interno de un contenedor*/
+    margin-bottom: 40px;
+     border-radius: 20px;
+}
+
+.blogs-food-two-container{
+    background-color:#f2f0f0;
+     border-radius: 20px;
+}
+
+
+.blogs-main-food{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+     border-radius: 20px;
+}
+
+
+.blogs-main-food-two{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2fr;
+     border-radius: 20px;
+}
+
+.blogs-food-img-container{
+    grid-column: 1;
+}
+
+
+.blogs-food-two-img-container{
+    grid-column: 2;
+    text-align: right;
+}
+
+
+.blogs-food-img-container img{
+    width: 600px;/* Grid estipulado con una dimensión al manejar porcentajes se adapta  a las dimensiones del grid*/
+     border-radius: 30px;
+ }
+
+ .blogs-food-two-img-container img{
+    width: 550px;/* Grid estipulado con una dimensión al manejar porcentajes se adapta  a las dimensiones del grid*/
+     border-radius: 30px;
+ }
+
+.blogs-food-info-container{
+    grid-column: 2;
+}
+
+.blogs-food-two-info-container{
+    grid-column: 1;
+}
+
+.blogs-food-info-container,.blogs-food-two-info-container p{
+    margin-bottom: 35px;
+    font-size: 18px;
+    text-align: justify;
+     border-radius: 20px;
+}
+
+.enlaces-informacion{
+    background: #F62913;
+    color: #fff;
+    padding: 10px;
+}
+
+/*Nosotros*/
+.blogs-post-container{
+    padding: 0px 50px 40px;
+}
+
+
+.blogs-post-container h2{
+    border-bottom: 1px solid #e6e9ed;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+.blogs-post-container .post-container{
+    display: inline-block; /*Poner elementos en forma horizontal*/
+    padding-left: 10px;
+    max-width: 30%;
+    margin-bottom: 50px;
+}
+
+.blogs-post-container .post-container p{
+    margin-bottom: 35px;
+}
+
+.blogs-post-container .post-container img{
+    width: 100%;
+}
+
+
+/*tercera pagina*/
+.blog-post-img-container{
+    padding: 10px 235px 40px;
+
+}
+
+
+.blog-post-img-container img{
+    width: 100%;
+    margin-top: 120px;
+    border-radius: 50px;
+}
+
+
+.blog-post-main-container{
+    padding: 20px 240px 40px;
+}
+
+.blog-post-main-container h3{
+    border-bottom: 1px solid #47cfac;
+    padding-bottom: 20px;
+}
+
+.blog-post-main-container article h1{
+    font-size: 30px;
+}
+
+
+/*animación de hover*/
+
+
+@keyframes example {
+  from {color: #fff;}
+  to {color: #47cfac;}
+}
+
+
+/*menu responsive*/
+
+.menu{
+    display: none;
+}
+
+
+.aparecer{
+    display: flex;
+}
+
+@media screen and (max-width: 800px) and (min-width: 100px) { 
+    
+    .menu{
+        display: block;
+        margin-right: 20px;
+    }
+
+   nav .profile-link   {
+        margin-right: 0px;
+    }
+    
+  header nav  .nav-left-section {
+    width:100%;
+    position: absolute;
+    background: #48cfad;  
+    display: none;
+    margin-top: 270px;
+         
+    }
+
+
+    nav .profile-link li  {
+        color: #fff;  
+        padding:10px 10px 10px 10px;
+        margin:10px 10px 10px 10px ;
+        color: #fff;
+        width: 90%;
+        border-bottom: 1px solid #fff;
+    }
+
+    nav .profile-link a {
+        border: none;
+        color: #fff;
+    }
+
+    .icofont-navigation-menu{
+        color: #000;
+    }
+
+
+    nav .nav-logo-container {
+        margin-left: 0px;
+    }
+
+
+    .aparecer{
+        display: inline-block !important;
+    }
+
+}
+
+
+
+/*contacto*/
+
+.img {
+    margin-top:     120px;
+    text-align: center;
+}
+
+
+
+.contact-main-container{
+    width: 100%;
+    height: 500px;
+    background: #10E9FB;
+    text-align: center;
+    padding-bottom: 40px;
+    
+}
+
+
+.contact-main-container div{
+    padding: 20px;
+}
+
+.contact-main-container div h3 {
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+
+.contact-main-container .contact-left{
+    text-align: center;
+}
+
+.contact-main-container img{
+    width: 100px;
+}
+
+.contact-right{
+    text-align: center;
+}
+
+
+.contact-info {
+            text-align: center;
+            color: #333;
+            margin-top: 50px;
+        }
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        .contact-info h2 {
+            margin-bottom: 20px;
+            color: #47cfac;
+        }
+        .contact-info ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .contact-info ul li {
+            margin-bottom: 5px;
+        }
+
+/* formulario */
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+label {
+    display: block;
+    text-align: center;
+  }
+
+  button,
+  input,
+  textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid lighten;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+
+ .full {
+  grid-column: 1;
+}
+
+
+.parallax {
+  /* The image used */
+  background-image:url('https://cdn.wamiz.fr/cdn-cgi/image/format=auto,quality=80,width=1200,height=675,fit=cover/article/main-picture/5c4072fa29cc6589966631.jpg');
+
+  /* Set a specific height */
+  min-height: 350px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*Inicio de sesion*/
+
+/* Estilos globales, si es necesario */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+header .logo {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilos específicos de la página de inicio de sesión */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #47cfac;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #3bb896;
+}
+
+.signup-link {
+    margin-top: 15px;
+    color: #333;
+}
+
+.signup-link a {
+    color: #47cfac;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/*Registo*/
+/* Estilos globales, si es necesario */
+
+
+/* Estilos específicos de la página de registro */
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.register-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.register-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #47cfac;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #3bb896;
+}
+
+.login-link {
+    margin-top: 15px;
+    color: #333;
+}
+
+.login-link a {
+    color: #47cfac;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*Login*/
+/* Estilo para la sección destacada */
+.destacado {
+    display: flex;
+    align-items: center; /* Alinear verticalmente */
+    justify-content: center; /* Alinear horizontalmente */
+    padding: 140px 2rem; /* Relleno */
+    background: url('https://st2.depositphotos.com/3378121/5193/i/450/depositphotos_51933801-stock-photo-labrador-puppies-in-a-basket.jpg') no-repeat center center/cover; /* Imagen de fondo */
+    color: white;
+    position: relative;
+    text-align: center; /* Alinear texto al centro */
+    border-radius: 50px; /* Redondear esquinas */
+    margin-top: 105px;
+}
+
+.contenido {
+    background: rgba(7, 0, 50, 0.6); /* Fondo semitransparente */
+    padding: 2rem; /* Relleno */
+    border-radius: 20px; /* Redondear esquinas */
+    text-align: center; /* Alinear texto al centro */
+}
+
+.texto h1 {
+    font-size: 2.5rem; /* Tamaño de fuente */
+    margin-bottom: 1rem; /* Margen inferior */
+}
+
+.texto p {
+    font-size: 1.2rem; /* Tamaño de fuente */
+    margin-bottom: 1rem; /* Margen inferior */
+}
+
+.boton {
+    display: inline-block; /* Mostrar como bloque */
+    background-color: #47cfac; /* Color de fondo */
+    color: white; /* Color de texto */
+    padding: 10px 20px; /* Relleno */
+    border-radius: 400px; /* Redondear bordes */
+    text-decoration: none; /* Quitar subrayado */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.boton:hover {
+    background-color: #2ecc71; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilo para la sección de registro */
+.registro {
+    padding: 50px; /* Relleno */
+    background-color: #f3f3f3; /* Color de fondo */
+    border-radius: 20px; /* Redondear esquinas */
+    margin-top: 50px; /* Margen superior */
+    text-align: center; /* Alinear texto al centro */
+}
+
+.formulario-registro {
+    display: flex; /* Mostrar como flexbox */
+    flex-direction: column; /* Dirección de los elementos */
+}
+
+.grupo-input {
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.grupo-input label {
+    margin-bottom: 5px; /* Margen inferior */
+}
+
+.grupo-input input[type="text"],
+.grupo-input input[type="number"],
+.grupo-input input[type="date"],
+.grupo-input input[type="checkbox"] {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Relleno */
+    border-radius: 5px; /* Redondear bordes */
+    border: 1px solid #ccc; /* Borde */
+    box-sizing: border-box; /* Caja de tamaño de borde */
+}
+
+.grupo-input input[type="checkbox"] {
+    width: auto; /* Ancho automático */
+}
+
+.registro button[type="submit"] {
+    display: block; /* Mostrar como bloque */
+    margin: 0 auto; /* Margen automático */
+    background-color: #47cfac; /* Color de fondo */
+    color: white; /* Color de texto */
+    padding: 10px 20px; /* Relleno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Redondear bordes */
+    cursor: pointer; /* Cursor de puntero */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.registro button[type="submit"]:hover {
+    background-color: #2ecc71; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilo específico para el botón de "Vacunas al día" */
+.grupo-input.checkbox .boton-vacunas {
+    background-color: #f39c12; /* Color de fondo */
+    color: white; /* Color de texto */
+    padding: 10px 20px; /* Relleno */
+    border-radius: 5px; /* Redondear bordes */
+    text-decoration: none; /* Quitar subrayado */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.grupo-input.checkbox .boton-vacunas:hover {
+    background-color: #d68910; /* Color de fondo al pasar el mouse */
+}
